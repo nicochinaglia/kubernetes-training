@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-nchinaglia
+spec:
+  containers:
+  - name: nginx
+    image: astronicko/nchinaglia:1.1.0
+    ports:
+    - containerPort: 80
+
+# docker run astronicko/nchinaglia:1.1.0
+# kubectl port-forward nginx-nchinaglia 8080:80
